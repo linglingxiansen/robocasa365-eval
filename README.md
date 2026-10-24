@@ -70,14 +70,14 @@ to `scripts/run_eval.py`. No machine-specific paths are embedded in the code.
 ## 2. Private checkpoint bundle
 
 The matching bundle is hosted in the private Hugging Face model repository
-[`llxs/robocasa365-policy-200k`](https://huggingface.co/llxs/robocasa365-policy-200k).
+[`llxs-robocasa-review/robocasa365-policy-200k`](https://huggingface.co/llxs-robocasa-review/robocasa365-policy-200k).
 The reviewer must first receive access to that repository. In the model
 environment, authenticate with your own authorized Hugging Face account and
 download the pinned revision from this repository's root:
 
 ```bash
 hf auth login
-hf download llxs/robocasa365-policy-200k \
+hf download llxs-robocasa-review/robocasa365-policy-200k \
   --revision 2deea919023acc8e49a5588c1406fa6c5a139e24 \
   --local-dir artifacts/200k
 ```
