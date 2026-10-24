@@ -1,0 +1,19 @@
+# Install a CUDA-compatible torch build before installing these dependencies.
+torch==2.7.1
+torchvision==0.22.1
+transformers==5.7.0
+accelerate==1.13.0
+qwen-vl-utils==0.0.14
+omegaconf==2.3.0
+PyYAML>=6,<7
+numpy>=1.26,<3
+Pillow
+rich
+tqdm
+safetensors
+websockets>=14,<16
+msgpack
+typing_extensions
+# Recommended acceleration, installed separately after torch:
+# flash-attn==2.8.3 --no-build-isolation
+# flash-linear-attention and causal-conv1d are optional Qwen3.5 accelerators.

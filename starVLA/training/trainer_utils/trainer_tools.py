@@ -1,0 +1,18 @@
+"""Inference-only image helper extracted from the StarVLA training utilities."""
+from PIL import Image
+
+
+def resize_images(images, target_size=(224, 224)):
+    """
+    recursively resize all images in the nested list.
+
+    :param images: nested list of images or single image.
+    :param target_size: target size (width, height) after resizing.
+    :return: resized images list, keeping the original nested structure.
+    """
+    if isinstance(images, Image.Image):  # if it is a single PIL image
+        return images.resize(target_size)
+    elif isinstance(images, list):  # if it is a list, recursively process each element
+        return [resize_images(img, target_size) for img in images]
+    else:
+        raise ValueError("Unsupported image type or structure.")

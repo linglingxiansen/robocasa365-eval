@@ -1,0 +1,14 @@
+# Install robosuite and RoboCasa source checkouts separately (see README).
+torch>=2.5
+numpy>=1.26,<3
+PyYAML>=6,<7
+omegaconf==2.3.0
+gymnasium
+pydantic>=2.10,<3
+pyzmq
+Pillow
+av
+websockets>=14,<16
+msgpack
+typing_extensions
+termcolor

@@ -1,0 +1,57 @@
+{
+  "prepared_on": "2026-10-24",
+  "scope": "Portable evaluation source snapshot; validation did not launch GPU inference or new simulation rollouts.",
+  "privacy": {
+    "passed": true,
+    "checks": ["private storage paths", "internal domains and user identifiers", "private IPv4 addresses", "credential patterns", "symlinks", "unreviewed binary files"],
+    "exported_processor_metadata_also_scanned": true,
+    "weights_and_local_artifacts_excluded_from_git": true,
+    "original_git_history_or_credentials_copied": false
+  },
+  "python_syntax": "passed",
+  "internal_import_dependency_closure": "passed",
+  "model_environment_cpu_tests": {
+    "passed": 19,
+    "skipped": 1,
+    "skip_reason": "Simulation-only test module requires the separate simulation dependencies.",
+    "subtests_passed": 7
+  },
+  "simulation_environment_cpu_tests": {
+    "passed": 12,
+    "selected_files": ["test_simulation_contracts.py", "test_native12_codec.py", "test_packaging.py"]
+  },
+  "checkpoint_validation": {
+    "tensor_only_state_dict": true,
+    "checkpoint_tensors": 929,
+    "expected_tensors": 929,
+    "missing_keys": 0,
+    "unexpected_keys": 0,
+    "shape_mismatches": 0,
+    "method": "Memory-mapped real checkpoint compared with the model instantiated on the meta device; no GPU allocation."
+  },
+  "exported_processor_validation": {
+    "passed": true,
+    "method": "Original and exported processors receive identical three-camera, four-frame RGB histories and task instructions.",
+    "exactly_equal_outputs": ["attention_mask", "input_ids", "mm_token_type_ids", "pixel_values_videos", "video_grid_thw"],
+    "input_ids_shape": [1, 1275]
+  },
+  "evaluated_source_parity": {
+    "unchanged_function_asts": ["QwenMMDiT.predict_action", "QWen3_5.build_qwenvl_inputs", "resize_images"],
+    "unchanged_files": ["native12_policy.py", "simulation.py", "multistep_wrapper.py"],
+    "action_head_math_unchanged": true,
+    "packaging_changes": ["portable base-model resolution", "architecture initialization followed by complete checkpoint restore", "Qwen backend independent of directory name", "tensor-only checkpoint loading", "portable runtime paths", "removal of demonstration entrypoints and host identity logging"]
+  },
+  "launcher_dry_runs": [
+    {"config": "eval_8gpu.yaml", "unique_tasks": 50, "model_workers": 7, "action_horizon": 50, "passed": true},
+    {"config": "eval_2gpu.yaml", "unique_tasks": 50, "model_workers": 1, "action_horizon": 50, "passed": true}
+  ],
+  "dry_run_scope": "Portable metadata with an explicit non-weight fixture; real weight keys/shapes were checked independently.",
+  "reference_results": {
+    "recomputed_from_all_task_stats": true,
+    "tasks": 50,
+    "episodes": 2500,
+    "successes": 1361,
+    "overall_success_rate_pct": 54.44
+  },
+  "remaining_runtime_validation": ["Live rendering preflight on the review host", "GPU checkpoint load and action prediction", "Independent full evaluation"]
+}

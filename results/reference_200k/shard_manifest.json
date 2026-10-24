@@ -1,0 +1,93 @@
+{
+  "split": "pretrain",
+  "task_set": [
+    "atomic_seen",
+    "composite_seen",
+    "composite_unseen"
+  ],
+  "n_episodes": 50,
+  "n_envs": 5,
+  "n_action_steps": 16,
+  "task_count": 50,
+  "checkpoint": "artifacts/200k/checkpoints/model.pt",
+  "workers": [
+    {
+      "env_names": [
+        "SearingMeat",
+        "StoreLeftoversInBowl",
+        "StackBowlsCabinet",
+        "WashLettuce",
+        "CuttingToolSelection",
+        "PickPlaceCounterToStove",
+        "OpenStandMixerHead"
+      ]
+    },
+    {
+      "env_names": [
+        "ArrangeBreadBasket",
+        "PreSoakPan",
+        "PortionHotDogs",
+        "CategorizeCondiments",
+        "OpenCabinet",
+        "TurnOffStove",
+        "SlideDishwasherRack"
+      ]
+    },
+    {
+      "env_names": [
+        "WaffleReheat",
+        "DeliverStraw",
+        "ArrangeTea",
+        "PrepareCoffee",
+        "CloseBlenderLid",
+        "PickPlaceSinkToCounter",
+        "TurnOnElectricKettle"
+      ]
+    },
+    {
+      "env_names": [
+        "PackIdenticalLunches",
+        "HeatKebabSandwich",
+        "GatherTableware",
+        "PanTransfer",
+        "CloseFridge",
+        "OpenDrawer",
+        "PickPlaceToasterToCounter"
+      ]
+    },
+    {
+      "env_names": [
+        "WashFruitColander",
+        "GarnishPancake",
+        "SetUpCuttingStation",
+        "SteamInMicrowave",
+        "ScrubCuttingBoard",
+        "PickPlaceCounterToCabinet",
+        "TurnOnSinkFaucet"
+      ]
+    },
+    {
+      "env_names": [
+        "GetToastedBread",
+        "WeighIngredients",
+        "SeparateFreezerRack",
+        "LoadDishwasher",
+        "KettleBoiling",
+        "CoffeeSetupMug",
+        "CloseToasterOvenDoor",
+        "TurnOnMicrowave"
+      ]
+    },
+    {
+      "env_names": [
+        "MakeIceLemonade",
+        "RecycleBottlesByType",
+        "StirVegetables",
+        "BreadSelection",
+        "RinseSinkBasin",
+        "PickPlaceDrawerToCounter",
+        "NavigateKitchen"
+      ]
+    }
+  ]
+}

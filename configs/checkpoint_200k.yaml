@@ -1,0 +1,75 @@
+seed: 42
+framework:
+  name: QwenMMDiT
+  qwenvl:
+    base_vlm: ${oc.env:EVAL_BASE_VLM,./artifacts/200k/base_vlm}
+    attn_implementation: flash_attention_2
+    vl_hidden_dim: 2560
+  obs_history_indices:
+  - -6
+  - -4
+  - -2
+  - 0
+  obs_history_source_fps: 20.0
+  action_model:
+    action_model_type: MMDiT-Psi0
+    action_dim: 12
+    state_dim: 20
+    future_action_window_size: 49
+    action_horizon: 50
+    past_action_window_size: 0
+    repeated_diffusion_steps: 8
+    vl_feature_dim: 2560
+    num_target_vision_tokens: 32
+    add_pos_embed: true
+    max_seq_len: 1024
+    noise_beta_alpha: 1.5
+    noise_beta_beta: 1.0
+    noise_s: 0.999
+    num_timestep_buckets: 1000
+    num_inference_timesteps: 10
+    state_placement: condition
+    state_dropout_ratio: 0.0
+    prediction_type: sample
+    t_eps: 0.05
+    loss_type: native12_control_mode_balanced
+    inactive_action_weight: 0.1
+  obs_image_size:
+  - 640
+  - 320
+datasets:
+  vla_data:
+    dataset_py: lerobot_datasets
+    lerobot_version: v2.1
+    include_state: true
+    action_horizon: 50
+    action_type: abs_eef
+    action_mode: abs
+    normalization_mode: min_max
+    obs_history_indices:
+    - -6
+    - -4
+    - -2
+    - 0
+    state_obs_history: true
+    lazy_step_sampling: true
+    sequential_step_sampling: false
+    load_all_data_for_training: true
+    balance_dataset_weights: true
+    balance_trajectory_weights: true
+    dataset_weight_scheme: power_frames
+    dataset_weight_exponent: 1.4
+    metadata_percentile_mixing_method: weighted_average
+    image_augmentation: true
+    augmentation_image_size:
+    - 640
+    - 320
+    min_pixels: 204800
+    max_pixels: 204800
+    per_device_batch_size: 2
+    video_backend: opencv
+    num_workers: 4
+    prefetch_factor: 4
+    persistent_workers: true
+trainer:
+  pretrained_checkpoint: null

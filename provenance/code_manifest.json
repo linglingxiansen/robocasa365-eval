@@ -1,0 +1,207 @@
+[
+  {
+    "path": "starVLA/model/tools.py",
+    "source_sha256": "d4efa60c517b40e7dee07d6da5b8ac0fd98f069d2cfeb72427ea194890addfc9",
+    "packaged_sha256": "d4efa60c517b40e7dee07d6da5b8ac0fd98f069d2cfeb72427ea194890addfc9",
+    "modified": false
+  },
+  {
+    "path": "starVLA/model/framework/base_framework.py",
+    "source_sha256": "75b2b09b73332f47ca448942bd6979a3212e47b7567fc62c47505f326b4cbd41",
+    "packaged_sha256": "7f4afd80637fbe2240fae87cebff0da0b134646ae86c5fa58c49053d4e5efec5",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/framework/share_tools.py",
+    "source_sha256": "9350908d6251a5f8abde81322f6798c3d4aa12a8cd15a430df2bd1a362c79c93",
+    "packaged_sha256": "de647043e47600c80cd7641d9dfd07038daa3853f3288731d077ac55c521c822",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/framework/VLM4A/QwenMMDiT.py",
+    "source_sha256": "3405b7ddf9c2a05ec28c9508afd0eb696a4244bb258441f9a61983de2bbcdba3",
+    "packaged_sha256": "28913014c823ac8ea2970c754cf3e667d0e4bc9aa2e98f5176cc15a3512c77f6",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/modules/vlm/__init__.py",
+    "source_sha256": "0e023fea7a817270c3925a844eff7f650bd2c86c003cb483c1bc4eb3dd0a78d7",
+    "packaged_sha256": "2c7abea7f684acea85fdcec00a2c9f0679ffbb285a14c9b4d29b4d72bf30fc5f",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/modules/vlm/QWen3_5.py",
+    "source_sha256": "5216bc2da7294e36ae06439809f599c4d921b4bdc5772807681a07b2afc4d327",
+    "packaged_sha256": "1e61a5364e1877ccd1349ad8dc95d270b0368a2796e47c7a8881bf2cc4384858",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/modules/action_model/MMDiT_ActionHeader.py",
+    "source_sha256": "b2ff51ebe82a1559ecab148163e0d643c1af97c6b916d9987c4cb16ed0f52014",
+    "packaged_sha256": "2cc7dfb51f66a19ea4b804a45e746f63660c8da470e6e41355900e0b09c39024",
+    "modified": true
+  },
+  {
+    "path": "starVLA/model/modules/action_model/control_mode_weighted_loss.py",
+    "source_sha256": "49ee1a07e09612b726cc3fc1650807b5e5fb854599e7f2d51917b8368d03f0a8",
+    "packaged_sha256": "49ee1a07e09612b726cc3fc1650807b5e5fb854599e7f2d51917b8368d03f0a8",
+    "modified": false
+  },
+  {
+    "path": "starVLA/model/modules/action_model/control_mode_balanced_loss.py",
+    "source_sha256": "a3ff48d486700a0397396ac10393ad8bf3823fe5bb8f8aaf54bbc35e605d3105",
+    "packaged_sha256": "a3ff48d486700a0397396ac10393ad8bf3823fe5bb8f8aaf54bbc35e605d3105",
+    "modified": false
+  },
+  {
+    "path": "starVLA/training/trainer_utils/__init__.py",
+    "source_sha256": "bd036db0376e394f189a420f798d0fa0b93637b72004419ccaaf316b8b5e757d",
+    "packaged_sha256": "bd036db0376e394f189a420f798d0fa0b93637b72004419ccaaf316b8b5e757d",
+    "modified": false
+  },
+  {
+    "path": "starVLA/training/trainer_utils/overwatch.py",
+    "source_sha256": "26490d610d638c975b1f60ade0d94125d09f86e1773ce8ad0fb65d81e6bf057f",
+    "packaged_sha256": "26490d610d638c975b1f60ade0d94125d09f86e1773ce8ad0fb65d81e6bf057f",
+    "modified": false
+  },
+  {
+    "path": "deployment/model_server/server_policy.py",
+    "source_sha256": "e390aa15a22f233dc28125b93c9668fd0418561ad2ddb539f0b199f0e6200b5e",
+    "packaged_sha256": "ffdccd8e428921f45879b1dd79962df6a58d8ec3f3df09e4293c1d58a0f68e0d",
+    "modified": true
+  },
+  {
+    "path": "deployment/model_server/tools/image_tools.py",
+    "source_sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186",
+    "packaged_sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186",
+    "modified": false
+  },
+  {
+    "path": "deployment/model_server/tools/msgpack_numpy.py",
+    "source_sha256": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057",
+    "packaged_sha256": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057",
+    "modified": false
+  },
+  {
+    "path": "deployment/model_server/tools/websocket_policy_client.py",
+    "source_sha256": "ffee68976c4e72c2467bfb88c079f06385eecf2134f4c80b99cb7d5c2d9d4ae2",
+    "packaged_sha256": "ffee68976c4e72c2467bfb88c079f06385eecf2134f4c80b99cb7d5c2d9d4ae2",
+    "modified": false
+  },
+  {
+    "path": "deployment/model_server/tools/websocket_policy_server.py",
+    "source_sha256": "973848ab9f39092e984e6bd54be28d226de4b8834cf92ca3fff1d8b381a25a88",
+    "packaged_sha256": "973848ab9f39092e984e6bd54be28d226de4b8834cf92ca3fff1d8b381a25a88",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/compute_metrics.py",
+    "source_sha256": "50fba7585e1636f195aaebf4b82a6ffcd193104a0a05d8ab6ebe8513104ee126",
+    "packaged_sha256": "50fba7585e1636f195aaebf4b82a6ffcd193104a0a05d8ab6ebe8513104ee126",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/__init__.py",
+    "source_sha256": "2beb4171090be0387b3602dc1c3a1f8ef9eec11aab940ff182d73c003d2d50d7",
+    "packaged_sha256": "2beb4171090be0387b3602dc1c3a1f8ef9eec11aab940ff182d73c003d2d50d7",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/get_eval_stats.py",
+    "source_sha256": "7b113b18f5bfaa706dd69c52bb19810b826dd57d91a8769051b252f2f8d6f1f9",
+    "packaged_sha256": "7b113b18f5bfaa706dd69c52bb19810b826dd57d91a8769051b252f2f8d6f1f9",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/launch_sharded_eval.py",
+    "source_sha256": "315e72893e0de812ea40be976b3fd746009c676872ee93eba7bd156f18a552c2",
+    "packaged_sha256": "92987ac16e8826b9628e6f857c2d9cb57a8bde496ec523b0ed93958506880f2f",
+    "modified": true
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/native12_policy.py",
+    "source_sha256": "645320fcb7886f24cc5b80f6a8663c2e3460ad8d0124567b5eb2a68682d2ca58",
+    "packaged_sha256": "645320fcb7886f24cc5b80f6a8663c2e3460ad8d0124567b5eb2a68682d2ca58",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/run_eval.py",
+    "source_sha256": "53afac1a3fb913427253cc1e3ca187c088a650eb962937066fd061f15c7fd8e9",
+    "packaged_sha256": "53afac1a3fb913427253cc1e3ca187c088a650eb962937066fd061f15c7fd8e9",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/run_eval_shard.py",
+    "source_sha256": "ed21b8777e62c83d19dfe2ae4e2681bbf5110003396c171e0a561e2202705533",
+    "packaged_sha256": "ed21b8777e62c83d19dfe2ae4e2681bbf5110003396c171e0a561e2202705533",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/simulation.py",
+    "source_sha256": "6a354b978ad2a41ee4891fa1a831e19b17cb90ea593e07adee1ae629efc645e4",
+    "packaged_sha256": "6a354b978ad2a41ee4891fa1a831e19b17cb90ea593e07adee1ae629efc645e4",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/preflight/__init__.py",
+    "source_sha256": "27e5f2744509ffb5cf9b2d9e84e353ee6134f82eb43a72b1f7ee93d4af7af9a5",
+    "packaged_sha256": "27e5f2744509ffb5cf9b2d9e84e353ee6134f82eb43a72b1f7ee93d4af7af9a5",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/preflight/check_render_gpu.py",
+    "source_sha256": "71f95fc9cf9eeca1810b2cef877ab7f85421a9a881685d4b00911d057a4ac4ad",
+    "packaged_sha256": "71f95fc9cf9eeca1810b2cef877ab7f85421a9a881685d4b00911d057a4ac4ad",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/wrappers/__init__.py",
+    "source_sha256": "f5e06f117adfa7b06d9447a0d3aa63fcf0a1e6fa97e1b57c08eba65122962cd1",
+    "packaged_sha256": "f5e06f117adfa7b06d9447a0d3aa63fcf0a1e6fa97e1b57c08eba65122962cd1",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/wrappers/multistep_wrapper.py",
+    "source_sha256": "18d583355cc3580930b0436987469767863d10b0d95903454de1be3baa6d02d1",
+    "packaged_sha256": "18d583355cc3580930b0436987469767863d10b0d95903454de1be3baa6d02d1",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/official/wrappers/video_recording_wrapper.py",
+    "source_sha256": "8a535dfbb7c5899b159e439a7fa88b7f4ffc193b8492cfcc6c38ecd2a9df1294",
+    "packaged_sha256": "8a535dfbb7c5899b159e439a7fa88b7f4ffc193b8492cfcc6c38ecd2a9df1294",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/runtime/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/runtime/contracts.py",
+    "source_sha256": "b807af4f90af7b8c60bbacba017feecc6f6be76c65e06bea5843b69a59fe252c",
+    "packaged_sha256": "b807af4f90af7b8c60bbacba017feecc6f6be76c65e06bea5843b69a59fe252c",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/runtime/robot.py",
+    "source_sha256": "f77ad36535acbd0da50e31757abca1b7e9137dacc28850f2baad3d75812e0c52",
+    "packaged_sha256": "f77ad36535acbd0da50e31757abca1b7e9137dacc28850f2baad3d75812e0c52",
+    "modified": false
+  },
+  {
+    "path": "examples/robocasa365/eval_files/runtime/service.py",
+    "source_sha256": "8b45c65e855dab170736de63af7afe5f6ab02f479ed6401b447f72fc3563a9e2",
+    "packaged_sha256": "8b45c65e855dab170736de63af7afe5f6ab02f479ed6401b447f72fc3563a9e2",
+    "modified": false
+  },
+  {
+    "path": "starVLA/training/trainer_utils/trainer_tools.py",
+    "source_sha256": "3463b8341091fd24ea98a2920a20b2b8d84c1ef7d49166991106b7e79c507dab",
+    "packaged_sha256": "f936a15f89ff3b1df58d4af0aae4fb0ee97ca42b309bfbfc35b50c56260a2835",
+    "modified": true,
+    "extraction": "resize_images only"
+  }
+]

@@ -1,0 +1,20 @@
+checkpoint: ${EVAL_CHECKPOINT}
+output_dir: ${EVAL_OUTPUT}
+task_set:
+- atomic_seen
+- composite_seen
+- composite_unseen
+split: pretrain
+n_episodes: 50
+n_envs: 5
+n_action_steps: 16
+save_video: false
+render_cuda_visible_devices: '0'
+model_cuda_visible_devices:
+- '1'
+- '2'
+- '3'
+- '4'
+- '5'
+- '6'
+- '7'
