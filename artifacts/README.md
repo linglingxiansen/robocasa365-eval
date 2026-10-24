@@ -1,4 +1,6 @@
 Place the private, portable model bundle here. Only this README is tracked.
+Download the pinned private Hugging Face revision using the commands in the
+[main README](../README.md#2-private-checkpoint-bundle).
 
 ```text
 200k/

@@ -69,8 +69,22 @@ to `scripts/run_eval.py`. No machine-specific paths are embedded in the code.
 
 ## 2. Private checkpoint bundle
 
-Obtain the matching bundle privately from the submitter and place it at
-`artifacts/200k`, with the layout in [artifacts/README.md](artifacts/README.md).
+The matching bundle is hosted in the private Hugging Face model repository
+[`llxs/robocasa365-policy-200k`](https://huggingface.co/llxs/robocasa365-policy-200k).
+The reviewer must first receive access to that repository. In the model
+environment, authenticate with your own authorized Hugging Face account and
+download the pinned revision from this repository's root:
+
+```bash
+hf auth login
+hf download llxs/robocasa365-policy-200k \
+  --revision 2deea919023acc8e49a5588c1406fa6c5a139e24 \
+  --local-dir artifacts/200k
+```
+
+The bundle contains 11 files, including an 11,365,636,299-byte checkpoint with
+SHA-256 `b6c2d13e1ec13b0bf755e33cb54a8e9d53dbe576280dcf330e5199fc9957e2c9`.
+See [artifacts/README.md](artifacts/README.md) for the directory layout.
 Keep the exact Qwen3.5-4B-Action tokenizer/processor assets supplied with the
 checkpoint; the trained checkpoint contains both VLM and action-head tensors.
 
