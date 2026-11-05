@@ -1,6 +1,6 @@
 # RoboCasa365 policy evaluation
 
-Private reviewer package for the 200,000-step MR0 / StarVLA-based Native12
+Evaluation package for the 200,000-step MR0 / StarVLA-based Native12
 policy. It contains inference and evaluation code, portable configuration,
 normalization statistics, and the complete self-evaluated reference results.
 Weights are distributed separately through a private model repository.
